@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>a79273ac-cb28-4744-a7a8-48e109bfe73f</Guid>
+    <Name>WOTC_Rulers_Pause_Timers</Name>
+    <Description>This mod adds two new abilities to all Rulers that pause the mission timer when they are in play (LoS to XCOM) and resumes it on Escape/Death</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_Rulers_Pause_Timers</AssemblyName>
+    <RootNamespace>WOTC_Rulers_Pause_Timers</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTC_Rulers_Pause_Timers\" />
+    <Folder Include="Src\WOTC_Rulers_Pause_Timers\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComRulersPauseTimers.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\WOTC_Rulers_Pause_Timers\Classes\X2Ability_RulersPauseTimers.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rulers_Pause_Timers\Classes\X2Condition_CheckTimer.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_Rulers_Pause_Timers\Classes\X2DownloadableContentInfo_WOTC_Rulers_Pause_Timers.uc" />
+    <Content Include="Src\WOTC_Rulers_Pause_Timers\Classes\X2Effect_RulersPauseTimers.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
